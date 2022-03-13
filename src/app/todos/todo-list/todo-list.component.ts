@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { Todo } from '../models/todo.model';
 import { AppState } from '../../app.reducer';
 import { filtrosValidos } from '../../filtro/filtro.actions';
-import { limpiarCompletados } from '../todo.actions';
+
 
 @Component({
   selector: 'app-todo-list',
@@ -28,8 +28,5 @@ export class TodoListComponent implements OnInit {
   }
 
 
-  limpiarCompletados(){
-    this.store.dispatch( limpiarCompletados() );
-  }
 
 }
